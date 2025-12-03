@@ -7,22 +7,11 @@ env/
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
 .Python
 
-# Database files (optional - you might want to exclude these)
-*.db
-*.sqlite
-*.sqlite3
-
-# Jupyter
-.ipynb_checkpoints/
 
 # VS Code
 .vscode/
-
-# Data files (if you don't want to commit large CSVs)
-*.csv
 
 # OS
 .DS_Store
