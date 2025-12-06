@@ -18,14 +18,8 @@ print("Column information:")
 for col in columns:
     print(f"  {col[1]} ({col[2]})")
 
-# Query for number of rows in activity table
-
-query = "SELECT COUNT(*) as total_rows FROM activity"
-result = pd.read_sql_query(query, conn)
-print(result)
-
 # Tables need joining - foreign key (user_id in 'activity') corresponds with id in users
-# Then extrapolate information
+# Then extrapolate information, export as Excel to work with in Tableau
 
 
 query1 = """
@@ -45,7 +39,8 @@ SELECT
     MAX(CASE WHEN finished = 1 THEN a.date ELSE NULL END) last_date_finished,
     MIN(flm.name_last_finished) AS name_last_finished,
     COUNT(DISTINCT a.id) AS movies_started,
-    COUNT(CASE WHEN finished = 1 THEN a.id ELSE NULL END) movies_finished
+    COUNT(CASE WHEN finished = 1 THEN a.id ELSE NULL END) AS movies_finished,
+    ROUND((COUNT(CASE WHEN finished = 1 THEN a.id ELSE NULL END) * 1.0 / COUNT(DISTINCT a.id)), 2) AS movie_percentage_finished
 
 FROM users u
     LEFT JOIN activity a
@@ -54,10 +49,11 @@ FROM users u
         ON flm.user_id = u.id
 
 GROUP BY u.id
-ORDER BY name_last_finished
+ORDER BY movie_percentage_finished DESC
 """
 
 result1 = pd.read_sql_query(query1, conn)
+result1.to_csv("result1.csv", index=False)
 print(result1)
 
 # Lessons Learned 1: join as late as possible. Early queries joined at all available instances, way too many joins

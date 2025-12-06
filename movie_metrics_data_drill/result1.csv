@@ -1,0 +1,26 @@
+user_id,user_created_at,first_date_finished,name_first_finished,last_date_finished,name_last_finished,movies_started,movies_finished,movie_percentage_finished
+24,2025-02-04,2025-02-05,Dune,2025-05-16,The Social Network,17,17,1.0
+13,2024-07-02,2024-09-19,Bohemian Rhapsody,2025-05-16,Soul,5,5,1.0
+7,2023-11-21,2024-08-28,Avengers: Endgame,2024-09-15,Soul,2,2,1.0
+1,2023-05-26,2023-09-12,Turning Red,2025-03-26,Her,30,26,0.87
+14,2024-07-24,2024-09-29,Spider-Man: No Way Home,2025-05-10,Parasite,14,12,0.86
+10,2024-02-13,2024-05-01,Whiplash,2025-03-08,Knives Out,7,6,0.86
+6,2023-11-20,2023-12-18,Inception,2025-03-27,The Revenant,13,11,0.85
+21,2025-01-01,2025-01-03,Up,2025-05-14,Forrest Gump,35,29,0.83
+17,2024-09-01,2024-09-01,Forrest Gump,2025-05-11,Big Hero 6,23,19,0.83
+12,2024-04-10,2024-04-11,Get Out,2025-05-08,Inside Out,46,38,0.83
+5,2023-09-01,2023-09-07,Top Gun: Maverick,2025-03-14,Bohemian Rhapsody,31,25,0.81
+18,2024-10-01,2024-10-01,Fight Club,2025-05-16,Fight Club,35,28,0.8
+2,2023-06-15,2023-06-22,The Shawshank Redemption,2025-05-01,Fight Club,15,12,0.8
+8,2024-01-12,2024-01-24,Arrival,2025-04-25,Whiplash,29,23,0.79
+4,2023-07-27,2023-07-27,Fight Club,2025-05-09,Avengers: Endgame,43,34,0.79
+22,2025-01-13,2025-01-14,Knives Out,2025-05-13,Big Hero 6,36,28,0.78
+25,2025-03-27,2025-04-07,Spider-Man: No Way Home,2025-05-10,Bohemian Rhapsody,23,17,0.74
+16,2024-08-28,2024-10-12,Everything Everywhere All At Once,2025-04-30,Minari,29,21,0.72
+23,2025-01-28,2025-01-31,Gladiator,2025-05-04,Mad Max: Fury Road,24,17,0.71
+9,2024-01-17,2024-02-25,Big Hero 6,2025-04-11,Moonlight,17,12,0.71
+19,2024-11-14,2024-12-21,The Social Network,2025-05-14,Coco,20,14,0.7
+15,2024-08-19,2024-09-21,Dune,2025-05-05,Forrest Gump,20,14,0.7
+3,2023-07-18,2023-11-10,Oppenheimer,2025-03-31,Nope,10,7,0.7
+20,2024-11-23,2024-11-27,Luca,2025-05-02,Fight Club,34,19,0.56
+11,2024-03-25,2025-01-29,Avengers: Endgame,2025-01-29,Avengers: Endgame,2,1,0.5
